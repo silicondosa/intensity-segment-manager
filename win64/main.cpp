@@ -21,7 +21,7 @@ int main()
     std::cout << "\tadd(10, 30, 1) => "; segments.add(10, 30, 1);
     std::cout << "\tadd(20, 40, 1) => "; segments.add(20, 40, 1);
     std::cout << "\tadd(10, 40,-2) => "; segments.add(10, 40, -2);
-    // Print initial state of segments
+    // Print final state of segments
     std::cout << "Test 1: Final state of segments: ";
     segments.printSegments();
     std::cout << std::endl << std::endl;
@@ -39,14 +39,14 @@ int main()
     std::cout << "\tadd(20, 40, 1) => "; segments.add(20, 40, 1);
     std::cout << "\tadd(10, 40,-1) => "; segments.add(10, 40, -1);
     std::cout << "\tadd(10, 40,-1) => "; segments.add(10, 40, -1);
-    // Print initial state of segments
+    // Print final state of segments
     std::cout << "Test 2: Final state of segments: ";
     segments.printSegments();
     std::cout << std::endl << std::endl;
     segments.clear();
 
     // --------------
-    // TEST EXAMPLE 2
+    // TEST EXAMPLE 3
     // --------------
     // Print initial state of segments
     std::cout << "Test 3: Initial state of segments: ";
@@ -58,8 +58,25 @@ int main()
     std::cout << "\tadd( 20 , 35 , 0   ) => "; segments.add( 20 , 35 , 0   );
     std::cout << "\tadd(-300,-40 ,-1000) => "; segments.add(-300,-40 ,-1000);
     std::cout << "\tadd(-100, 100, 100 ) => "; segments.add(-100, 100,  100);
-    // Print initial state of segments
+    // Print final state of segments
     std::cout << "Test 3: Final state of segments: ";
+    segments.printSegments();
+    std::cout << std::endl << std::endl;
+    segments.clear();
+
+    // --------------
+    // TEST EXAMPLE 4
+    // --------------
+    // Print initial state of segments
+    std::cout << "Test 4: Initial state of segments: ";
+    segments.printSegments();
+    std::cout << std::endl;
+    // Test calls here
+    std::cout << "\tadd( 10 , 20 , 0   ) => "; segments.add(10, 20, 0);
+    std::cout << "\tadd( 15 , 30 , 0   ) => "; segments.add(15, 30, 0);
+    std::cout << "\tadd(-10 ,-5  , 0   ) => "; segments.add(20, 35, 0);
+    // Print final state of segments
+    std::cout << "Test 4: Final state of segments: ";
     segments.printSegments();
     std::cout << std::endl << std::endl;
     segments.clear();
