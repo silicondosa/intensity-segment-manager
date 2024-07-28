@@ -71,7 +71,7 @@ private:
         }
 
         // insert upper bound if we have reached the end of the vector or if the upper bound is larger than the ith element
-        if (i == segmentVector.size() || segmentVector[i].first < upper_bound) {
+        if (i == segmentVector.size() || upper_bound < segmentVector[i].first) {
             segmentVector.insert(segmentVector.begin() + i, std::make_pair(upper_bound, (intensityType)0));
         }
         // If the updated upper_bound is the same as its previous element, delete it.

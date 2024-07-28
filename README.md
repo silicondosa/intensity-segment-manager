@@ -18,6 +18,7 @@ This is a simple C++14 header-only library that manages intensity values by segm
 - Per the requirement, the `updateSegments(lower_bound, upper_bound, intensity, setFlag)` function adds(`setFlag==false`, as called in the `add` function)/sets(`setFlag==true` as called in the `set` function) the `intensity` value to the existing segments from the lower_bound (inclusive) to the upper_bound (not inclusive) if `lower_bound < upper_bound`. It returns `0` if the updated intensity values had to be clipped to keep them in the range `[MIN_INTENSITY, MAX_INTENSITY]`, otherwise returning `1`.
 - Helper functions were written for printing the current state of the vector (`segmentManager::printSegments()`), and clearing it (`segmentManager::clear()`).
 - DoxyGen-compatible comments are implemented to help generate documentation files if need be. The rest of the code is also commented with explanations where necessary.
+- The `main.cpp` file with a few test cases can be found at `./win64/main.cpp`.
 
 ## Corner cases accounted for by `updateSegments`
 The library accounts for a few corner cases that might arise:
