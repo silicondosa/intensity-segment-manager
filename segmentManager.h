@@ -75,7 +75,7 @@ private:
             segmentVector.insert(segmentVector.begin() + i, std::make_pair(upper_bound, (intensityType)0));
         }
         // If the updated upper_bound is the same as its previous element, delete it.
-        else if (segmentVector[i].second == segmentVector[i-1].second) {
+        if (segmentVector[i].second == segmentVector[i-1].second) {
             segmentVector.erase(segmentVector.begin() + i);
             --i;
         }

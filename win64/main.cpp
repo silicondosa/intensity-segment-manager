@@ -53,11 +53,11 @@ int main()
     segments.printSegments();
     std::cout << std::endl;
     // Test calls here
-    std::cout << "\tadd(-10 , 30 , 10  ) => "; segments.add(-10 , 30 , 10   );
-    std::cout << "\tadd( 40 , 60 , 100 ) => "; segments.add( 40 , 60 , 100  );
-    std::cout << "\tadd( 20 , 35 ,-40  ) => "; segments.add( 20 , 35 , -40  );
-    std::cout << "\tadd(-300,-40 ,-1000) => "; segments.add(-300,-40 , -1000);
-    std::cout << "\tadd(-100, 100, 100 ) => "; segments.add(-100, 100,  100 );
+    std::cout << "\tadd(-10 , 30 , 10  ) => "; segments.add(-10 , 30 , 10  );
+    std::cout << "\tadd( 40 , 60 , 100 ) => "; segments.add( 40 , 60 , 100 );
+    std::cout << "\tadd( 20 , 35 , 0   ) => "; segments.add( 20 , 35 , 0   );
+    std::cout << "\tadd(-300,-40 ,-1000) => "; segments.add(-300,-40 ,-1000);
+    std::cout << "\tadd(-100, 100, 100 ) => "; segments.add(-100, 100,  100);
     // Print initial state of segments
     std::cout << "Test 3: Final state of segments: ";
     segments.printSegments();
